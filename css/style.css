@@ -1,41 +1,107 @@
 /* Box Model Hack */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
 }
 
 .clear {
-	clear: both;
+    clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
+html {
+    font-size: 62.5%;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
 
-body {
+main {
+    color: white;
+}
 
+ul,
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p,
+a,
+button {
+    font-size: 1.7rem;
+}
+
+button {
+    color: #e57c6d;
+    background-color: white;
+
+}
+
+a[href="#"] {
+    font-size: 3.4rem;
+    font-weight: 500;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+#landing {
+    background-image: url(../assets/pexels-rodion-kutsaiev-4664463.jpg);
+    background-size: cover;
+    background-position: right 0 top -50px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
 header {
-
+    padding: 6rem 5rem;
 }
 
-footer {
-
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*flex-basis: 1 0 33.3333%;*/
 }
+
+nav>* {
+    min-width: 20rem;
+}
+
+nav>ul {
+    display: flex;
+    padding: 0;
+    line-height: 2;
+    align-items: center;
+}
+
+nav>ul>li,
+nav>div>a {
+    padding: 0 1rem;
+}
+
+nav>div {
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 /******************************************
 /* ADDITIONAL STYLES
