@@ -52,6 +52,7 @@ const modal = document.querySelector('#modal')
 const loginBtn = document.querySelector('a[href="#login"]')
 console.log(loginBtn)
 const resetPasswordBtn = document.querySelector('a[href="#reset-password"]')
+const loginContainerBtn = document.querySelector('a[href="#login-container"]')
 const body = document.querySelector('body')
 const loginModal = document.querySelector('#login')
 const resetPasswordModal = document.querySelector('#reset-password')
@@ -107,6 +108,13 @@ function openForgotPasswordModal() {
 	loginModal.classList.toggle('hide', 'login-container')
 	resetPasswordModal.classList.toggle('hide')
 	resetPasswordModal.classList.add('login-container')
+}
+
+loginContainerBtn.addEventListener('click', openLoginModal)
+
+function openLoginModal() {
+	resetPasswordModal.classList.toggle('hide', 'login-container')
+	loginModal.classList.remove('hide')
 }
 
 /**
