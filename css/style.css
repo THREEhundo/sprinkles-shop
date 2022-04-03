@@ -54,7 +54,7 @@ button {
 button {
     color: #e57c6d;
     background-color: white;
-
+    padding: 1.5rem 2rem;
 }
 
 a[href="#"] {
@@ -70,6 +70,11 @@ a[href="#"] {
     background-image: url(../assets/pexels-rodion-kutsaiev-4664463.jpg);
     background-size: cover;
     background-position: right 0 top -50px;
+
+}
+
+#landing,
+#shopping {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -115,8 +120,21 @@ main>#landing>section {
     align-items: center;
 }
 
-main>#landing>section>button {
-    padding: 1.5rem 2rem;
+
+/**********************
+/* SHOPPING
+/**********************/
+#shopping {
+    align-items: center;
+}
+
+#shopping>.subheading {
+    text-align: center;
+}
+
+.shop-btn-secondary {
+    color: white;
+    background-color: #e57c6d;
 }
 
 /******************************************
