@@ -35,6 +35,10 @@ h1 {
     font-size: 7.5rem;
 }
 
+h3 {
+    font-size: 3.5rem;
+}
+
 ul,
 a {
     text-decoration: none;
@@ -62,6 +66,10 @@ a[href="#"] {
     font-weight: 500;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
 
 /******************************************
 /* LAYOUT
@@ -75,7 +83,7 @@ a[href="#"] {
 
 #landing,
 #shopping {
-    width: 100vw;
+    /*width: 100vw;*/
     height: 100vh;
     display: flex;
     flex-flow: column;
@@ -126,15 +134,31 @@ main>#landing>section {
 /**********************/
 #shopping {
     align-items: center;
+    background-color: #FAFCFB;
 }
 
 #shopping>.subheading {
     text-align: center;
 }
 
+#shopping>.subheading>h3 {
+    font-weight: 500;
+}
+
 .shop-btn-secondary {
     color: white;
     background-color: #e57c6d;
+}
+
+.shopping-items-container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.shopping-items-container>* {
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 600px;
 }
 
 /******************************************
