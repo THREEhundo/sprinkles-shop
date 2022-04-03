@@ -35,6 +35,10 @@ h1 {
     font-size: 7.5rem;
 }
 
+h2 {
+    font-size: 5.5rem;
+}
+
 h3 {
     font-size: 3.5rem;
 }
@@ -137,9 +141,10 @@ main>#landing>section {
 #shopping {
     align-items: center;
     background-color: #FAFCFB;
+    justify-content: space-evenly;
 }
 
-#shopping>.subheading {
+.subheading {
     text-align: center;
 }
 
@@ -155,12 +160,18 @@ main>#landing>section {
 .shopping-items-container {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
+    min-height: 0;
+    max-height: 50%;
 }
 
 .shopping-items-container>* {
-    flex: 1 1 auto;
-    min-width: 0;
-    max-width: 600px;
+    flex: 1 1 50%;
+}
+
+#shopping img {
+    height: 100%;
+    width: auto;
 }
 
 /*************************
@@ -171,6 +182,35 @@ main>#landing>section {
     background-image: url(../assets/pawel-czerwinski-pc1X8HYlENs-unsplash.jpg);
 }
 
+#kitchen {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+#kitchen>* {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+#kitchen>div {
+    display: flex;
+    justify-content: center;
+}
+
+#kitchen .subheading {
+    max-width: 500px;
+}
+
+#kitchen>img {
+    max-height: 100vh;
+    max-width: max-content;
+}
+
+/*************************
+/* BANNER
+/*************************/
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
