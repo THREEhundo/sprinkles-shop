@@ -74,16 +74,18 @@ img {
 /******************************************
 /* LAYOUT
 /*******************************************/
+.banner {
+    background-size: cover;
+}
+
 #landing {
     background-image: url(../assets/pexels-rodion-kutsaiev-4664463.jpg);
-    background-size: cover;
     background-position: right 0 top -50px;
 
 }
 
-#landing,
-#shopping {
-    /*width: 100vw;*/
+#shopping,
+.banner {
     height: 100vh;
     display: flex;
     flex-flow: column;
@@ -159,6 +161,14 @@ main>#landing>section {
     flex: 1 1 auto;
     min-width: 0;
     max-width: 600px;
+}
+
+/*************************
+/* BANNER
+/*************************/
+
+#third-page {
+    background-image: url(../assets/pawel-czerwinski-pc1X8HYlENs-unsplash.jpg);
 }
 
 /******************************************
