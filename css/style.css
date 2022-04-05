@@ -258,3 +258,21 @@ footer i {
 footer .address+p>a {
     color: white;
 }
+
+/****************************
+/* OUR STORY
+/****************************/
+
+.our-story {
+    color: black !important;
+
+}
+
+.our-story>section:first-child,
+.our-story>section:last-child {
+    padding: 2rem 3rem;
+}
+
+.our-story-banner {
+    padding: 0;
+}
