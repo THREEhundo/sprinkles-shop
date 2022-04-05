@@ -254,3 +254,7 @@ footer i {
     grid-template-rows: repeat(3, 50%);
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+footer .address+p>a {
+    color: white;
+}
