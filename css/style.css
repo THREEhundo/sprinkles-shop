@@ -33,6 +33,7 @@ main {
 
 h1 {
     font-size: 7.5rem;
+    text-align: center;
 }
 
 h2 {
@@ -41,6 +42,10 @@ h2 {
 
 h3 {
     font-size: 3.5rem;
+}
+
+h4 {
+    font-size: 2rem;
 }
 
 ul,
@@ -63,6 +68,7 @@ button {
     color: #e57c6d;
     background-color: white;
     padding: 1.5rem 2rem;
+    border: none;
 }
 
 a[href="#"] {
@@ -146,6 +152,8 @@ main>#landing>section {
 
 .subheading {
     text-align: center;
+    padding: 0 1rem;
+
 }
 
 #shopping>.subheading>h3 {
@@ -209,8 +217,25 @@ main>#landing>section {
 }
 
 /*************************
-/* BANNER
+/* FOOTER
 /*************************/
+
+footer {
+    background: #e57c6d;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>h4 {
+    font-weight: 400;
+}
+
+footer i {
+    margin-top: 2.66rem;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
