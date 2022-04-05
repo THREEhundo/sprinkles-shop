@@ -237,5 +237,10 @@ footer i {
 }
 
 /******************************************
-/* ADDITIONAL STYLES
+/* SHOPPING LANDING PAGE
 /*******************************************/
+
+.shop-header ul,
+.shop-header a {
+    color: black;
+}
