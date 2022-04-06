@@ -228,7 +228,7 @@ main>#landing>section {
 footer {
     background: #e57c6d;
     color: white;
-    padding: 1rem 2rem;
+    padding: 6rem 5rem;
     display: flex;
     justify-content: space-between;
 }
@@ -245,7 +245,9 @@ footer i {
 /* SHOPPING LANDING PAGE
 /*******************************************/
 .shopping-landing-page a,
-.shopping-landing-page ul {
+.shopping-landing-page ul,
+.our-story a,
+.our-story ul {
     color: black;
 }
 
@@ -270,7 +272,7 @@ footer .address+p>a {
 
 .our-story>section:first-child,
 .our-story>section:last-child {
-    padding: 2rem 3rem;
+    padding: 6rem 10rem;
 }
 
 .our-story-banner {
