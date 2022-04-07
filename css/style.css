@@ -72,7 +72,15 @@ button {
     border: none;
 }
 
-a[href="#"] {
+button:hover {
+    color: white;
+    background-color: #e57c6d;
+    padding: 1.5rem 2rem;
+    border: none;
+}
+
+.heading,
+a[href="../index.html"] {
     font-size: 3.4rem;
     font-weight: 500;
 }
@@ -168,6 +176,13 @@ main>#landing>section {
 .shop-btn-secondary {
     color: white;
     background-color: #e57c6d;
+    border: 1px solid #e57c6d;
+}
+
+.shop-btn-secondary:hover {
+    color: #e57c6d;
+    background-color: white;
+    border: 1px solid #e57c6d;
 }
 
 .shopping-items-container {
@@ -199,7 +214,7 @@ main>#landing>section {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 
 #kitchen>* {
@@ -244,11 +259,17 @@ footer i {
 /******************************************
 /* SHOPPING LANDING PAGE
 /*******************************************/
+
 .shopping-landing-page a,
 .shopping-landing-page ul,
 .our-story a,
 .our-story ul {
-    color: black;
+    color: #e57c6d;
+}
+
+header ul li:hover,
+header div>a:hover {
+    font-weight: bold;
 }
 
 .donuts-list {
