@@ -383,11 +383,13 @@ label {
     min-width: 50%;
 }
 
+
+
 .product-main>.item-description {
     padding: 0 1rem;
 }
 
-.product-main+section {
+.additional-products {
     padding: 0 5rem;
 }
 
@@ -421,4 +423,31 @@ form>button {
 
 .additional-products>h2 {
     align-self: flex-start;
+}
+
+@media screen and (max-width: 700px) {
+
+    .product-main,
+    .additional-products {
+        flex-flow: column;
+    }
+
+    .product-main>.item-description {
+        padding: 0;
+    }
+
+    .product-main>img,
+    .product-main>.item-description {
+        min-width: 100%;
+    }
+
+    .donuts-list {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .additional-products {
+        padding-top: 5rem;
+    }
 }
