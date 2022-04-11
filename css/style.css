@@ -254,8 +254,14 @@ footer {
     background: #e57c6d;
     color: white;
     padding: 6rem 5rem;
+
+}
+
+.footer-wrapper {
     display: flex;
     justify-content: space-between;
+    max-width: 1440px;
+    margin: auto;
 }
 
 footer>h4 {
