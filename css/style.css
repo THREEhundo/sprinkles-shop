@@ -71,14 +71,14 @@ button {
 button {
     color: #e57c6d;
     background-color: #EBEDEC;
-    padding: 1.5rem 2rem;
+    padding: 2.5rem 2rem;
     border: none;
 }
 
 button:hover {
     color: white;
     background-color: #e57c6d;
-    padding: 1.5rem 2rem;
+    padding: 2.5rem 2rem;
     border: none;
 }
 
@@ -91,7 +91,12 @@ a[href="../index.html"] {
 img {
     width: 100%;
     height: auto;
+    overflow: hidden;
 }
+
+/* 996 w
+    1236 h
+ */
 
 figcaption {
     text-align: center;
@@ -316,11 +321,17 @@ footer .address+p>a {
 /*********************************
 /* SHOPPING PAGE
 /*********************************/
+.product h1,
+.product h2 {
+    font-size: calc((2.8 - 1) * 1.2vw + 1rem);
+    text-align: left;
+}
 
 .product h1,
 .product h2,
-.sublinks {
-    color: #e57c6d;
+.sublinks>li>a,
+.item-description>* {
+    color: black;
 }
 
 .sublinks {
@@ -334,7 +345,9 @@ footer .address+p>a {
     padding-left: 1.2rem;
 }
 
-.item-description>* {
+
+.sublinks,
+.price {
     color: #e57c6d;
 }
 
@@ -343,15 +356,25 @@ label {
 }
 
 .product-main {
-    display: flex;
     flex-flow: row nowrap;
+}
+
+.product-main,
+.additional-products {
+    display: flex;
     padding: 0 5rem;
+    position: relative;
+    max-width: 1240px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .product-main>img,
 .product-main>.item-description {
-    flex: 1;
+    flex: 1 1 auto;
     max-width: 50%;
+    min-width: 50%;
 }
 
 .product-main>.item-description {
@@ -368,6 +391,7 @@ form>* {
 }
 
 form>input {
+    width: 40%;
     padding: 2rem;
     border: 1px solid #e57c6d;
 }
@@ -378,8 +402,17 @@ form>input:focus {
 
 form>button {
     width: 100%;
+    max-width: 375px;
 }
 
 .price {
     font-weight: bold;
+}
+
+.additional-products {
+    flex-direction: column;
+}
+
+.additional-products>h2 {
+    align-self: flex-start;
 }
