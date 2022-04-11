@@ -23,13 +23,16 @@
 html {
     font-size: 62.5%;
     font-family: 'IBM Plex Sans Arabic', sans-serif;
+    background-color: #FAFCFB;
 }
 
 main {
     color: white;
 }
 
-
+.product a {
+    color: #e57c6d;
+}
 
 h1 {
     font-size: 7.5rem;
@@ -67,7 +70,7 @@ button {
 
 button {
     color: #e57c6d;
-    background-color: white;
+    background-color: #EBEDEC;
     padding: 1.5rem 2rem;
     border: none;
 }
@@ -173,15 +176,17 @@ main>#landing>section {
     font-weight: 500;
 }
 
-.shop-btn-secondary {
+.shop-btn-secondary,
+form>button {
     color: white;
     background-color: #e57c6d;
     border: 1px solid #e57c6d;
 }
 
-.shop-btn-secondary:hover {
+.shop-btn-secondary:hover,
+form>button:hover {
     color: #e57c6d;
-    background-color: white;
+    background-color: #EBEDEC;
     border: 1px solid #e57c6d;
 }
 
@@ -278,6 +283,10 @@ header div>a:hover {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+figure:hover {
+    font-weight: bold;
+}
+
 footer .address+p>a {
     color: white;
 }
@@ -302,4 +311,75 @@ footer .address+p>a {
 
 .our-story-banner {
     padding: 0;
+}
+
+/*********************************
+/* SHOPPING PAGE
+/*********************************/
+
+.product h1,
+.product h2,
+.sublinks {
+    color: #e57c6d;
+}
+
+.sublinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 8rem;
+}
+
+.sublinks>li {
+    padding-left: 1.2rem;
+}
+
+.item-description>* {
+    color: #e57c6d;
+}
+
+label {
+    font-size: 1.6rem;
+}
+
+.product-main {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0 5rem;
+}
+
+.product-main>img,
+.product-main>.item-description {
+    flex: 1;
+    max-width: 50%;
+}
+
+.product-main>.item-description {
+    padding: 0 1rem;
+}
+
+.product-main+section {
+    padding: 0 5rem;
+}
+
+form>* {
+    display: block;
+    margin-top: 1.5rem;
+}
+
+form>input {
+    padding: 2rem;
+    border: 1px solid #e57c6d;
+}
+
+form>input:focus {
+    outline: 2px solid #e57c6d;
+}
+
+form>button {
+    width: 100%;
+}
+
+.price {
+    font-weight: bold;
 }
