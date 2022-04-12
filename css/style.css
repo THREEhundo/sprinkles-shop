@@ -201,6 +201,8 @@ form>button:hover {
     justify-content: center;
     min-height: 0;
     max-height: 50%;
+    min-width: 33%;
+    max-width: 90%;
 }
 
 .shopping-items-container>* {
