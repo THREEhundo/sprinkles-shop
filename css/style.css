@@ -71,14 +71,14 @@ button {
 button {
     color: #e57c6d;
     background-color: #EBEDEC;
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 4rem;
     border: none;
 }
 
 button:hover {
     color: white;
     background-color: #e57c6d;
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 4rem;
     border: none;
 }
 
@@ -161,6 +161,9 @@ main>#landing>section {
     align-items: center;
 }
 
+.heading {
+    text-align: center;
+}
 
 /**********************
 /* SHOPPING
@@ -226,7 +229,8 @@ form>button:hover {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /*height: 100vh;*/
+    max-width: 1400px;
+    margin: auto;
 }
 
 #kitchen>* {
@@ -241,6 +245,7 @@ form>button:hover {
 
 #kitchen .subheading {
     max-width: 500px;
+    margin-right: 5rem;
 }
 
 #kitchen>img {
