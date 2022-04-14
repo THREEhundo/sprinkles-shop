@@ -579,6 +579,10 @@ form>button {
         flex-flow: column;
     }
 
+    .product-main {
+        overflow: hidden;
+    }
+
     .product-main>.item-description {
         padding: 0;
     }

@@ -16,3 +16,25 @@ mobileListItems.forEach((item) =>
 		hamburger.classList.toggle('opened')
 	}),
 )
+
+const productImg = document.querySelector('.product-img')
+const mq700 = window.matchMedia('(max-width: 700px)')
+
+function productAnimation() {
+	return productImg.classList.add('animate__animate', 'animate__fadeInRight')
+}
+
+function screenTest(e) {
+	if (e.matches) {
+		/*** the viewport is 700px or less */
+		productImg.classList.add('animate__animated', 'animate__fadeInRight')
+	} else {
+		productImg.classList.remove('animate__animated', 'animate__fadeInRight')
+	}
+}
+
+/*** Animates product on browser size change & window load */
+mq700.addEventListener('change', screenTest)
+document.addEventListener('DOMContentLoaded', function (e) {
+	screenTest(mq700)
+})
