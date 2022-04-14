@@ -38,3 +38,9 @@ mq700.addEventListener('change', screenTest)
 document.addEventListener('DOMContentLoaded', function (e) {
 	screenTest(mq700)
 })
+
+/*** Animates shop list items on load */
+document.addEventListener('DOMContentLoaded', function (e) {
+	const donutsList = document.querySelector('.donuts-list')
+	donutsList.classList.add('animate__animated', 'animate__fadeIn')
+})
