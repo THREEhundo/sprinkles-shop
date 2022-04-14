@@ -282,6 +282,12 @@ footer i {
 /******************************************
 /* SHOPPING LANDING PAGE
 /*******************************************/
+.goods-container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 174px);
+    justify-content: space-between;
+}
 
 .shopping-landing-page a,
 .shopping-landing-page ul,
