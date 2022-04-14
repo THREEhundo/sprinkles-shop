@@ -449,6 +449,15 @@ form>button {
 }
 
 @media screen and (max-width: 700px) {
+    .top-fixed {
+        position: fixed;
+        left: 0;
+        right: 0;
+    }
+
+    #landing {
+        position: relative;
+    }
 
     header {
         padding: 6rem 2.5rem;
@@ -461,6 +470,37 @@ form>button {
 
     nav>* {
         min-width: 0;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .drop-down-menu {
+        position: fixed;
+        top: 107px;
+        background-color: #578ECF;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        align-items: center;
+    }
+
+    .drop-down-menu>section>ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 170px);
+    }
+
+    .drop-down-menu>section>ul>li>a {
+        font-size: 10rem;
+        text-align: center;
     }
 
     .menu {
@@ -544,6 +584,10 @@ form>button {
 
 @media screen and (min-width: 701px) {
     .menu {
+        display: none;
+    }
+
+    .drop-down-menu {
         display: none;
     }
 }
