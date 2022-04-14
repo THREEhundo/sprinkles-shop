@@ -328,8 +328,24 @@ footer .address+p>a {
 }
 
 .our-story-banner {
-    padding: 0;
+    background-color: #e57c6d;
+    padding: 0 10rem;
 }
+
+.our-story-banner,
+.our-story-banner+section {
+    margin: auto;
+}
+
+.our-story-banner+section {
+    max-width: 1440px;
+    padding: 0 5rem;
+}
+
+.our-story-banner>img {
+    vertical-align: bottom;
+}
+
 
 /*********************************
 /* SHOPPING PAGE
@@ -434,6 +450,73 @@ form>button {
 
 @media screen and (max-width: 700px) {
 
+    header {
+        padding: 6rem 2.5rem;
+    }
+
+    header>nav>ul,
+    a[href="login"] {
+        display: none;
+    }
+
+    nav>* {
+        min-width: 0;
+    }
+
+    .menu {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        padding: 0;
+    }
+
+    .menu:hover {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .line {
+        fill: none;
+        stroke: white;
+        stroke-width: 6;
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+            stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .line1 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+    }
+
+    .line2 {
+        stroke-dasharray: 60 60;
+        stroke-width: 6;
+    }
+
+    .line3 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+    }
+
+    .opened .line1 {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+        stroke-width: 6;
+    }
+
+    .opened .line2 {
+        stroke-dasharray: 1 60;
+        stroke-dashoffset: -30;
+        stroke-width: 6;
+    }
+
+    .opened .line3 {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+        stroke-width: 6;
+    }
+
     .product-main,
     .additional-products {
         flex-flow: column;
@@ -456,5 +539,11 @@ form>button {
 
     .additional-products {
         padding-top: 5rem;
+    }
+}
+
+@media screen and (min-width: 701px) {
+    .menu {
+        display: none;
     }
 }
