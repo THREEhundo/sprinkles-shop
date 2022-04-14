@@ -472,6 +472,10 @@ form>button {
         min-width: 0;
     }
 
+    .shopping-landing-page .line {
+        stroke: #e57c6d;
+    }
+
     .block {
         display: block;
     }
@@ -488,6 +492,10 @@ form>button {
         left: 0;
         right: 0;
         align-items: center;
+    }
+
+    .shopping-landing-page .drop-down-menu {
+        background-color: white;
     }
 
     .drop-down-menu>section>ul {
