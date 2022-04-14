@@ -473,7 +473,8 @@ form>button {
     }
 
     .our-story .line,
-    .shopping-landing-page .line {
+    .shopping-landing-page .line,
+    .product .line {
         stroke: #e57c6d;
     }
 
@@ -496,8 +497,10 @@ form>button {
     }
 
     .shopping-landing-page .drop-down-menu,
-    .our-story .drop-down-menu {
+    .our-story .drop-down-menu,
+    .product .drop-down-menu {
         background-color: white;
+        color: #e57c6d;
     }
 
     .drop-down-menu>section>ul {
@@ -565,6 +568,10 @@ form>button {
         stroke-dasharray: 90 207;
         stroke-dashoffset: -134;
         stroke-width: 6;
+    }
+
+    .product .drop-down-menu {
+        position: static;
     }
 
     .product-main,
