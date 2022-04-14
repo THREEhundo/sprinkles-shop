@@ -472,6 +472,7 @@ form>button {
         min-width: 0;
     }
 
+    .our-story .line,
     .shopping-landing-page .line {
         stroke: #e57c6d;
     }
@@ -494,7 +495,8 @@ form>button {
         align-items: center;
     }
 
-    .shopping-landing-page .drop-down-menu {
+    .shopping-landing-page .drop-down-menu,
+    .our-story .drop-down-menu {
         background-color: white;
     }
 

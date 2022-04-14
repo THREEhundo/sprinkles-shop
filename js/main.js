@@ -1,11 +1,8 @@
 const hamburger = document.querySelector('.menu')
-
-const shoppingMobileMenu = document.querySelector('#shopping-mobile-menu')
-
+const dropDownMenu = document.querySelector('.drop-down-menu')
 const mobileListItems = document.querySelectorAll('.mobile-list-item')
 
 function toggleMobileMenu() {
-	const dropDownMenu = document.querySelector('.drop-down-menu')
 	dropDownMenu.classList.toggle('block')
 	dropDownMenu.classList.toggle('none')
 	document.body.classList.toggle('top-fixed')
@@ -13,8 +10,9 @@ function toggleMobileMenu() {
 
 hamburger.addEventListener('click', () => toggleMobileMenu())
 
-shoppingMobileMenu.addEventListener('click', () => toggleMobileMenu())
-
 mobileListItems.forEach((item) =>
-	item.addEventListener('click', () => hamburger.classList.toggle('opened')),
+	item.addEventListener('click', () => {
+		toggleMobileMenu()
+		hamburger.classList.toggle('opened')
+	}),
 )
