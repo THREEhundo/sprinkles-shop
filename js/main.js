@@ -51,10 +51,11 @@ document.addEventListener('DOMContentLoaded', function (e) {
 const modal = document.querySelector('#modal')
 const loginBtn = document.querySelector('a[href="#login"]')
 console.log(loginBtn)
+const resetPasswordBtn = document.querySelector('a[href="#reset-password"]')
 const body = document.querySelector('body')
 const loginModal = document.querySelector('#login')
-const allForms = document.querySelectorAll('form')
-console.log(allForms)
+const resetPasswordModal = document.querySelector('#reset-password')
+const createAccountModal = document.querySelector('#create-account')
 
 // Opens Login Modal
 loginBtn.addEventListener('click', (e) => {
@@ -99,19 +100,14 @@ function toggleModal() {
 		? modal.classList.toggle('login-pane')
 		: modal.classList.add('login-pane')
 }
-//
-//// Stops propagating the click event so it never reaches the parent (#modal)
-//loginModal.addEventListener('click', (e) => {
-//	e.preventDefault()
-//	e.stopPropagation()
-//	e.stopImmediatePropagation()
-//	// if filling out form bubble up
-//	//let forms = document.querySelectorAll('form').forEach('click', (e) => {
-//	//	let submitter = e.submitter
-//	//	let handler = submitter.id
-//	//	handler ?
-//	//})
-//})
+resetPasswordBtn.addEventListener('click', openForgotPasswordModal)
+// When Login-Container is open & forgot password link is clicked
+function openForgotPasswordModal() {
+	//hide login section
+	loginModal.classList.toggle('hide', 'login-container')
+	resetPasswordModal.classList.toggle('hide')
+	resetPasswordModal.classList.add('login-container')
+}
 
 /**
  * Create login module
