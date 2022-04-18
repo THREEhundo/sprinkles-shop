@@ -52,13 +52,15 @@ const modal = document.querySelector('#modal')
 const loginBtn = document.querySelector('a[href="#login"]')
 console.log(loginBtn)
 const body = document.querySelector('body')
-loginBtn.addEventListener('click', () => {
-	body.style.overflowY = 'hidden'
-	modal.classList.toggle('hide')
-	modal.classList.add('login-pane')
+
+// Opens Login Modal
+loginBtn.addEventListener('click', (e) => {
+	//body.style.overflowY = 'hidden'
+	//modal.classList.toggle('hide')
+	//modal.classList.add('login-pane')
+	toggleModal()
+
 	/**
-	 * toggle hide off modal
-	 * add login-pane class to modal
 	 *
 	 * conditional (press escape key)
 	 * 	- turn off body overflowY hidden
@@ -67,8 +69,30 @@ loginBtn.addEventListener('click', () => {
 	 *
 	 *	conditional
 	 */
-	//modal.cl
 })
+
+// EventListener for closing Login Modal with Escape key if it's open
+body.addEventListener('keydown', (e) => {
+	console.log(e.key)
+	return e.key === 'Escape' && !modal.classList.contains('hide')
+		? toggleModal()
+		: ''
+})
+
+modal.addEventListener('click', toggleModal)
+
+function toggleModal() {
+	// turn off overflowY
+	body.style.overflowY === 'hidden'
+		? (body.style.overflowY = 'visible')
+		: (body.style.overflowY = 'hidden')
+	// toggle hide class
+	modal.classList.toggle('hide')
+	// toggle login-pane or add it
+	modal.classList.contains('login-pane')
+		? modal.classList.toggle('login-pane')
+		: modal.classList.add('login-pane')
+}
 /**
  * Create login module
  * 1. frosted background div
