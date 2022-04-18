@@ -52,6 +52,9 @@ const modal = document.querySelector('#modal')
 const loginBtn = document.querySelector('a[href="#login"]')
 console.log(loginBtn)
 const body = document.querySelector('body')
+const loginModal = document.querySelector('#login')
+const allForms = document.querySelectorAll('form')
+console.log(allForms)
 
 // Opens Login Modal
 loginBtn.addEventListener('click', (e) => {
@@ -79,7 +82,10 @@ body.addEventListener('keydown', (e) => {
 		: ''
 })
 
-modal.addEventListener('click', toggleModal)
+// ! Only targets the Aside modal and not it's children
+modal.addEventListener('click', (e) =>
+	e.target === modal ? toggleModal() : '',
+)
 
 function toggleModal() {
 	// turn off overflowY
@@ -93,6 +99,20 @@ function toggleModal() {
 		? modal.classList.toggle('login-pane')
 		: modal.classList.add('login-pane')
 }
+//
+//// Stops propagating the click event so it never reaches the parent (#modal)
+//loginModal.addEventListener('click', (e) => {
+//	e.preventDefault()
+//	e.stopPropagation()
+//	e.stopImmediatePropagation()
+//	// if filling out form bubble up
+//	//let forms = document.querySelectorAll('form').forEach('click', (e) => {
+//	//	let submitter = e.submitter
+//	//	let handler = submitter.id
+//	//	handler ?
+//	//})
+//})
+
 /**
  * Create login module
  * 1. frosted background div
