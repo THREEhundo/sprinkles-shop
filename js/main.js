@@ -25,12 +25,7 @@ function productAnimation() {
 }
 
 function screenTest(e) {
-	//if (e.matches && productImg) {
-	//	/*** the viewport is 700px or less */
-	//	productImg.classList.add('animate__animated', 'animate__fadeInRight')
-	//} else {
-	//	productImg.classList.remove('animate__animated', 'animate__fadeInRight')
-	//}
+	/*** e.matches checks to see if the viewport is 700px or less */
 	e.matches && productImg
 		? productImg.classList.add('animate__animated', 'animate__fadeInRight')
 		: !e.matches && productImg
@@ -55,10 +50,11 @@ document.addEventListener('DOMContentLoaded', function (e) {
 // ! Add event listener to freeze y scroll & close on escape
 const modal = document.querySelector('#modal')
 const loginBtn = document.querySelector('a[href="#login"]')
+console.log(loginBtn)
 const body = document.querySelector('body')
 loginBtn.addEventListener('click', () => {
 	console.log(`click click`)
-	body.style.overflowY = 'hidden'
+	//body.style.overflowY = 'hidden'
 	//modal.cl
 })
 /**
