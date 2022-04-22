@@ -110,9 +110,13 @@ figcaption {
 
 .login-pane {
     height: 100vh;
+    width: 100vw;
     background-color: rgba(0, 0, 0, .3);
     display: grid;
     place-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 .login-container {

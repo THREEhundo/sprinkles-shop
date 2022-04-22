@@ -53,8 +53,20 @@ const loginBtn = document.querySelector('a[href="#login"]')
 console.log(loginBtn)
 const body = document.querySelector('body')
 loginBtn.addEventListener('click', () => {
-	console.log(`click click`)
-	//body.style.overflowY = 'hidden'
+	body.style.overflowY = 'hidden'
+	modal.classList.toggle('hide')
+	modal.classList.add('login-pane')
+	/**
+	 * toggle hide off modal
+	 * add login-pane class to modal
+	 *
+	 * conditional (press escape key)
+	 * 	- turn off body overflowY hidden
+	 * 	- toggle hide on modal
+	 * 	- toggle login-pane class on modal
+	 *
+	 *	conditional
+	 */
 	//modal.cl
 })
 /**
