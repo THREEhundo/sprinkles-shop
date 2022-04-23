@@ -25,7 +25,7 @@ function productAnimation() {
 }
 
 function screenTest(e) {
-	if (e.matches) {
+	if (e.matches && productImg) {
 		/*** the viewport is 700px or less */
 		productImg.classList.add('animate__animated', 'animate__fadeInRight')
 	} else {
