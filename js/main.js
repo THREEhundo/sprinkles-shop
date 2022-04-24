@@ -44,3 +44,24 @@ document.addEventListener('DOMContentLoaded', function (e) {
 	const donutsList = document.querySelector('.donuts-list')
 	donutsList.classList.add('animate__animated', 'animate__fadeIn')
 })
+
+/**
+ * Create login module
+ * 1. frosted background div
+ * 2. container div
+ * 3. welcome h1
+ * 3. form
+ * 4. email input
+ * 5. password input
+ * 6. sign in button
+ * 7. forgot password? anchor tag
+ * 8. create account anchor tag
+ */
+
+/**
+ * Forgot password module
+ */
+
+/**
+ * Create username module
+ */

@@ -103,6 +103,65 @@ figcaption {
 }
 
 /******************************************
+/* Login
+/*******************************************/
+
+.login-pane {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    place-items: center;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 480px;
+    margin: auto;
+    background-color: white;
+    padding: 0 5rem;
+}
+
+.login-container,
+.login-container * {
+    border-radius: .4rem;
+}
+
+.login-container h1 {
+    font-size: 3rem;
+}
+
+.login-container input {
+    line-height: 2.2rem;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 0;
+}
+
+
+.login-container div {
+    display: flex;
+    padding: 1rem 0;
+}
+
+.login-container a {
+    color: black;
+    font-size: 1.4rem;
+    flex: 0 1 50%;
+    width: 50%;
+}
+
+.login-container a+a {
+    text-align: right;
+}
+
+.login-container button {
+    padding: 1.25rem 2rem;
+}
+
+/******************************************
 /* LAYOUT
 /*******************************************/
 .banner {
