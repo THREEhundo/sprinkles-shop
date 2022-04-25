@@ -45,6 +45,15 @@ document.addEventListener('DOMContentLoaded', function (e) {
 	donutsList.classList.add('animate__animated', 'animate__fadeIn')
 })
 
+// ! Add event listener to freeze y scroll & close on escape
+const modal = document.querySelector('#modal')
+const loginBtn = document.querySelector('a[href="#login"]')
+const body = document.querySelector('body')
+loginBtn.addEventListener('click', () => {
+	console.log(`click click`)
+	body.style.overflowY = 'hidden'
+	//modal.cl
+})
 /**
  * Create login module
  * 1. frosted background div

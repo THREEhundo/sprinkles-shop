@@ -27,7 +27,8 @@
 
 
     <!--Photo by <a href="https://unsplash.com/@lore_schodts?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lore Schodts</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
-    <aside class="login-pane">
+    <aside class="hide" id="modal">
+        <!-- login-panel -->
         <section class="login-container" id="login">
             <h1 class="login-heading">Welcome to Sprinkles</h1>
             <form class="sign-in" novalidate>
@@ -40,17 +41,17 @@
                 </div>
             </form>
         </section>
-        <section class="login-container" id="reset-password">
+        <section class="hide" id="reset-password">
             <h1>Reset Password</h1>
             <form novalidate class="sign-in">
                 <input type="email" placeholder="E-mail" name="reset-password" id="reset-password">
                 <button type="submit">Send Reset Link</button>
             </form>
             <div class="anchor-container">
-                <a href="#login-container">Back to Sign In</a>
+                <a href="#login-container">Back to sign in</a>
             </div>
         </section>
-        <section class="login-container" id="create-account">
+        <section class="hide" id="create-account">
             <h1>Create Account</h1>
             <form novalidate class="sign-in">
                 <input type="text" placeholder="First Name" name="first-name" id="first-name">
@@ -82,7 +83,7 @@
                     </button>
                     <a href="#" class="heading">SPRINKLES</a>
                     <div>
-                        <a href="login">Login</a>
+                        <a href="#login">Login</a>
                         <a href="cart"><i class="fa-solid fa-cart-shopping"></i></a>
                     </div>
                 </nav>
