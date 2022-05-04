@@ -25,12 +25,17 @@ function productAnimation() {
 }
 
 function screenTest(e) {
-	if (e.matches && productImg) {
-		/*** the viewport is 700px or less */
-		productImg.classList.add('animate__animated', 'animate__fadeInRight')
-	} else {
-		productImg.classList.remove('animate__animated', 'animate__fadeInRight')
-	}
+	//if (e.matches && productImg) {
+	//	/*** the viewport is 700px or less */
+	//	productImg.classList.add('animate__animated', 'animate__fadeInRight')
+	//} else {
+	//	productImg.classList.remove('animate__animated', 'animate__fadeInRight')
+	//}
+	e.matches && productImg
+		? productImg.classList.add('animate__animated', 'animate__fadeInRight')
+		: !e.matches && productImg
+		? productImg.classList.remove('animate__animated', 'animate__fadeInRight')
+		: ''
 }
 
 /*** Animates product on browser size change & window load */
@@ -42,7 +47,9 @@ document.addEventListener('DOMContentLoaded', function (e) {
 /*** Animates shop list items on load */
 document.addEventListener('DOMContentLoaded', function (e) {
 	const donutsList = document.querySelector('.donuts-list')
-	donutsList.classList.add('animate__animated', 'animate__fadeIn')
+	return donutsList
+		? donutsList.classList.add('animate__animated', 'animate__fadeIn')
+		: ''
 })
 
 // ! Add event listener to freeze y scroll & close on escape
