@@ -28,17 +28,41 @@
 
     <!--Photo by <a href="https://unsplash.com/@lore_schodts?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lore Schodts</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
     <aside class="login-pane">
-        <section class="login-container">
-            <h1>Welcome to Sprinkles</h1>
-            <form novalidate>
-                <input name="email" placeholder="Email" type="email">
+        <section class="login-container" id="login">
+            <h1 class="login-heading">Welcome to Sprinkles</h1>
+            <form class="sign-in" novalidate>
+                <input name="email" placeholder="E-mail" type="email">
                 <input name="password" placeholder="Password" type="password">
                 <button type="submit">Sign In</button>
-                <div>
-                    <a href="http://">Forgot Password?</a>
-                    <a href="http://">Create Account</a>
+                <div class="anchor-container">
+                    <a href="#reset-password">Forgot Password?</a>
+                    <a href="#create-account">Create Account</a>
                 </div>
             </form>
+        </section>
+        <section class="login-container" id="reset-password">
+            <h1>Reset Password</h1>
+            <form novalidate class="sign-in">
+                <input type="email" placeholder="E-mail" name="reset-password" id="reset-password">
+                <button type="submit">Send Reset Link</button>
+            </form>
+            <div class="anchor-container">
+                <a href="#login-container">Back to Sign In</a>
+            </div>
+        </section>
+        <section class="login-container" id="create-account">
+            <h1>Create Account</h1>
+            <form novalidate class="sign-in">
+                <input type="text" placeholder="First Name" name="first-name" id="first-name">
+                <input type="text" placeholder="Last Name" name="last-name" id="last-name">
+                <input type="email" placeholder="E-mail" name="email" id="email">
+                <input type="password" placeholder="Create Password" name="password" id="password">
+                <input type="password" placeholder="Re-type Password" name="confirm-password" id="confirm-password">
+                <button type="submit">Create Account</button>
+            </form>
+            <div class="anchor-container">
+                <a href="#login">Already have an account? Sign in</a>
+            </div>
         </section>
     </aside>
     <main>

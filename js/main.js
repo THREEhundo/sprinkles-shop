@@ -56,12 +56,30 @@ document.addEventListener('DOMContentLoaded', function (e) {
  * 6. sign in button
  * 7. forgot password? anchor tag
  * 8. create account anchor tag
+ * 9. event listener on forgot password link
+ * 9. JS add class display none to login
+ * 10. add display: grid to forgot-password section
+ * 11. event listener on create account link
+ * 12. add display: grid to create account section
+ * 13. login-container display: none
  */
 
 /**
  * Forgot password module
+ * 1. Reset password header
+ * 2.email input
+ * 3. send reset link button
+ * 4. back to sign in anchor
  */
 
 /**
- * Create username module
+ * Create account module
+ * 1.Create Account Header
+ * 2. First Name Input
+ * 3. Last Name input
+ * 4. email input
+ * 5. Create Password Input
+ * 6. Re-type password input
+ * 7. Create Account Button
+ * 8. Already have an account? Sign in anchor
  */
