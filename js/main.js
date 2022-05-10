@@ -53,6 +53,8 @@ const loginBtn = document.querySelector('a[href="#login"]')
 console.log(loginBtn)
 const resetPasswordBtn = document.querySelector('a[href="#reset-password"]')
 const loginContainerBtn = document.querySelector('a[href="#login-container"]')
+const createAccountBtn = document.querySelector('a[href="#create-account"]')
+const signinBtn = document.querySelector('a[href="#signin"]')
 const body = document.querySelector('body')
 const loginModal = document.querySelector('#login')
 const resetPasswordModal = document.querySelector('#reset-password')
@@ -101,7 +103,10 @@ function toggleModal() {
 		? modal.classList.toggle('login-pane')
 		: modal.classList.add('login-pane')
 }
+
+// Opens Reset Password Modal from Login Modal
 resetPasswordBtn.addEventListener('click', openForgotPasswordModal)
+
 // When Login-Container is open & forgot password link is clicked
 function openForgotPasswordModal() {
 	//hide login section
@@ -110,48 +115,31 @@ function openForgotPasswordModal() {
 	resetPasswordModal.classList.add('login-container')
 }
 
-loginContainerBtn.addEventListener('click', openLoginModal)
+loginContainerBtn.addEventListener(
+	'click',
+	openLoginModalCloseForgotPasswordModal,
+)
 
-function openLoginModal() {
+function openLoginModalCloseForgotPasswordModal() {
 	resetPasswordModal.classList.toggle('hide', 'login-container')
 	loginModal.classList.remove('hide')
 }
 
-/**
- * Create login module
- * 1. frosted background div
- * 2. container div
- * 3. welcome h1
- * 3. form
- * 4. email input
- * 5. password input
- * 6. sign in button
- * 7. forgot password? anchor tag
- * 8. create account anchor tag
- * 9. event listener on forgot password link
- * 9. JS add class display none to login
- * 10. add display: grid to forgot-password section
- * 11. event listener on create account link
- * 12. add display: grid to create account section
- * 13. login-container display: none
- */
+// Open Create Account Modal from Login Modal
+createAccountBtn.addEventListener('click', openCreateAccountModal)
 
-/**
- * Forgot password module
- * 1. Reset password header
- * 2.email input
- * 3. send reset link button
- * 4. back to sign in anchor
- */
+function openCreateAccountModal() {
+	loginModal.classList.contains('hide')
+		? loginModal.classList.remove('hide')
+		: loginModal.classList.add('hide')
+	createAccountModal.classList.remove('hide')
+	createAccountModal.classList.add('login-container')
+}
 
-/**
- * Create account module
- * 1.Create Account Header
- * 2. First Name Input
- * 3. Last Name input
- * 4. email input
- * 5. Create Password Input
- * 6. Re-type password input
- * 7. Create Account Button
- * 8. Already have an account? Sign in anchor
- */
+signinBtn.addEventListener('click', openLoginModalCloseCreateAccountModal)
+
+function openLoginModalCloseCreateAccountModal() {
+	loginModal.classList.contains('hide') && loginModal.classList.remove('hide')
+	loginModal.classList.add('login-container')
+	createAccountModal.classList.toggle('hide')
+}
