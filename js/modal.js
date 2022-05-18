@@ -1,4 +1,4 @@
-const modal = document.querySelector('#modal')
+const modal = document.querySelector('.modal')
 const loginBtn = document.querySelector('a[href="#login"]')
 console.log(loginBtn)
 const resetPasswordBtn = document.querySelector('a[href="#reset-password"]')
@@ -74,3 +74,14 @@ function openLoginModalCloseCreateAccountModal() {
 	loginModal.classList.add('login-container')
 	createAccountModal.classList.toggle('hide')
 }
+
+// create a seperate stylesheet for each html file
+/**
+ * remove id from modal
+ * change id to class
+ * change selector in CSS from id --> class
+ * see if class queryselector works
+ * if not change class modal to individual id's
+ * copy pasta modal functions into new scripts for each page
+ *
+ */
