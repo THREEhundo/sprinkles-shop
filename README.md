@@ -1,4 +1,4 @@
-<h1 align="center">Sprinkles <a href="https://donut-sprinkles.netlify.app/index.html">Sprinkles</a></h1>
+<h1 align="center"><a href="https://donut-sprinkles.netlify.app/index.html">Sprinkles</a></h1>
 <h3 align="center">Webapp for a local donut shop.</h3>
 
 - 🔭 How It's Made: **The theme when creating the mockup was thick containers and bright colors, kind of like a donut. Animate.css library was used for the animation. The animation gives the web app a little flair to go along with the bright colors.**

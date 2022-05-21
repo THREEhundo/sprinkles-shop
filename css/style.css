@@ -690,6 +690,18 @@ form>button {
     .additional-products {
         padding-top: 5rem;
     }
+
+    .drop-down-menu {
+        z-index: 1;
+    }
+
+    .goods-container {
+        z-index: 2;
+    }
+
+    .mobile-list-item {
+        width: min-content;
+    }
 }
 
 @media screen and (min-width: 701px) {
