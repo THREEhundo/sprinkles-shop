@@ -1,6 +1,9 @@
 const modal = document.querySelector('.modal')
 const loginBtn = document.querySelector('a[href="#login"]')
 console.log(loginBtn)
+// mobile login btn
+const mobileLoginBtn = document.querySelector('a[href="#mobile-login"]')
+const dropdown = document.querySelector('.drop-down-menu')
 const resetPasswordBtn = document.querySelector('a[href="#reset-password"]')
 const loginContainerBtn = document.querySelector('a[href="#login-container"]')
 const createAccountBtn = document.querySelector('a[href="#create-account"]')
@@ -12,6 +15,12 @@ const createAccountModal = document.querySelector('#create-account')
 
 // Opens Login Modal
 loginBtn.addEventListener('click', toggleModal)
+mobileLoginBtn.addEventListener('click', () => {
+	toggleModal()
+	toggleMobileMenu()
+})
+// // !toggleModal() doesn't work when adding to mobile login
+// !add conditions to mobileLoginBtn
 
 // EventListener for closing Login Modal with Escape key if it's open
 body.addEventListener('keydown', (e) =>
@@ -73,6 +82,11 @@ function openLoginModalCloseCreateAccountModal() {
 	loginModal.classList.contains('hide') && loginModal.classList.remove('hide')
 	loginModal.classList.add('login-container')
 	createAccountModal.classList.toggle('hide')
+}
+function toggleMobileMenu() {
+	dropdown.classList.toggle('block')
+	dropdown.classList.toggle('none')
+	document.body.classList.toggle('top-fixed')
 }
 
 // create a seperate stylesheet for each html file
