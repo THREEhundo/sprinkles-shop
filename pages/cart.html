@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Story</title>
+    <title>Shopping Cart</title>
 
     <!-- External CSS links -->
     <script src="https://kit.fontawesome.com/e3ff970fe9.js" crossorigin="anonymous"></script>
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body class="our-story">
+<body class="cart">
     <aside class="hide modal">
         <!-- login-panel -->
         <section class="login-container" id="login">
@@ -86,15 +86,16 @@
             </ul>
         </section>
     </div>
-    <main class="our-story">
-        <section>
-            <h1>Our Story</h1>
-            <p>Sprinkles was founded in 2010 in Bedstuy, Brooklyn. What started as a neighborhood spot for morning treats quickly boomed. Srinkles became everyone's favorite donuts both in Los Angeles and internationally. Sprinkles expanded into DTLA, placing roots in the Historic Core district in 2015. What followed were two kiosk locations located in the Arts District and Little Tokyo. Our donuts with unique flavors sets Sprinkles donuts apart and makes it a donut you can enjoy all day long.</p>
+    <main>
+        <section class="empty-cart">
+            <h2>Shopping Cart</h2>
+            <p>Your shopping cart is empty.</p>
+            <a href="../index.html">
+                <button class="secondary-btn">Continue Shopping</button>
+            </a>
         </section>
-        <section class="our-story-banner"><img src="../assets/diogo-palhais-zWp_LBdg9eg-unsplash.jpg" alt=""></section>
-        <section>
-            <h1>What set's us apart?</h1>
-            <p>Sprinkles's donuts are handmade with love and care. Our staff passionately mastered the craft of doughnut making through a hands-on approach that focuses on freshness and fullness of flavor. Sprinkles' donuts are made in small batches throughout the day to ensure that they are always fresh for you to enjoy. When you visit the shops, you can see how the donuts are made. The transparency of the process is based on the philosophy that buying a doughnut is an experience, not just a product. All new products are developed in line with the same core philosophy and process applied to Sprinkles' donuts. Stay tuned for exciting and delicious new treats!</p>
+        <section class="full-cart">
+
         </section>
         <footer>
             <div class="footer-wrapper">
@@ -113,6 +114,7 @@
     </main>
     <script type="text/javascript" src="../js/main.js"></script>
     <script type="text/javascript" src="../js/modal.js"></script>
+    <script type="text/javascript" src="../js/cart.js"></script>
 </body>
 
 </html>

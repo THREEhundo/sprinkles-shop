@@ -84,3 +84,21 @@ console.log(shop.cartSubtotal())
  * get cart subtotal
  * set single item count & subtotal
  */
+
+// When clicking shopping cart --> if empty show empty section
+
+const cartIcon = document.querySelector('a[href="../pages/cart.html"]')
+const emptyCartSection = document.querySelector('.empty-cart')
+const fullCartSection = document.querySelector('.full-cart')
+cartIcon.addEventListener('click', toggleCartView)
+
+function toggleCartView() {
+	console.log(shop.totalCount)
+	if (shop.totalCount === 0) {
+		emptyCartSection.style.display = 'block'
+		fullCartSection.style.display = 'none'
+	} else {
+		emptyCartSection.style.display = 'none'
+		fullCartSection.style.display = 'block'
+	}
+}

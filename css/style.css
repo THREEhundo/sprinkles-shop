@@ -713,3 +713,16 @@ form>button {
         display: none;
     }
 }
+
+/*********************************
+/* SHOPPING CART
+/*********************************/
+
+.cart {
+    background-color: #578ECF;
+    min-height: 100vh;
+}
+
+.cart footer {
+    background: #578ECF;
+}
