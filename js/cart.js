@@ -28,6 +28,11 @@
  *
  */
 
+window.onload = (e) => {
+	let cartBody = document.querySelector('.cart')
+	return cartBody ? toggleCartView() : toggleCartView()
+}
+
 class ShoppingCart {
 	constructor() {
 		this.cartItems = [
@@ -40,7 +45,7 @@ class ShoppingCart {
 		]
 	}
 
-	get totalCount() {
+	get totalItemCount() {
 		return this.totalCount()
 	}
 
@@ -73,10 +78,6 @@ class ShoppingCart {
 }
 
 let shop = new ShoppingCart()
-console.log(shop)
-console.log(shop.updateSingleItem({ count: 10, type: 'cherryGlaze' }))
-console.log(shop.updateSingleItem({ count: 5, type: 'tangerineZest' }))
-console.log(shop.cartSubtotal())
 
 /***
  * get total count of items
@@ -90,10 +91,9 @@ console.log(shop.cartSubtotal())
 const cartIcon = document.querySelector('a[href="../pages/cart.html"]')
 const emptyCartSection = document.querySelector('.empty-cart')
 const fullCartSection = document.querySelector('.full-cart')
-cartIcon.addEventListener('click', toggleCartView)
-
+//cartIcon.addEventListener('click', toggleCartView)
+//
 function toggleCartView() {
-	console.log(shop.totalCount)
 	if (shop.totalCount === 0) {
 		emptyCartSection.style.display = 'block'
 		fullCartSection.style.display = 'none'
@@ -102,3 +102,8 @@ function toggleCartView() {
 		fullCartSection.style.display = 'block'
 	}
 }
+
+/***
+ * Update & create Shopping Cart Items
+ *
+ */

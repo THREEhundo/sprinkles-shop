@@ -732,7 +732,8 @@ form>button {
     padding: 2rem 5rem;
 }
 
-.empty-cart>h2 {
+.empty-cart>h2,
+.full-cart>h2 {
     font-size: 3.5rem;
 }
 
@@ -749,4 +750,37 @@ form>button {
 .blue-btn:hover {
     opacity: 0.7;
     background-color: #578ECF;
+}
+
+.cart-subtotal div {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cart-subtotal p {
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+#checkout {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+@media screen and (min-width: 850px) {
+    .cart-subtotal {
+        width: 50%;
+        align-items: flex-end;
+        margin-left: auto;
+        max-width: 35rem;
+    }
+
+
 }
