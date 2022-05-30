@@ -104,6 +104,34 @@ function toggleCartView() {
 }
 
 /***
- * Update & create Shopping Cart Items
+ * 1. Remove up & down arrows in the input
  *
+ * 2. flex --> input and subtotal (space between)
+ *
+ * 3. Add media queries for full-cart-items
+ * 	i. img
+ * 	ii. link
+ * 	iii. close row button
+ * 	iv. input
+ * 	v. subtotal
+ *
+ * ! JS Logic
+ * 4. onClick --> close button --> donut count goes to zero
+ *
+ * 5. donut.count == 1 ? disable minus button
+ *
+ * 6. input buttons onclick --> update donut count
+ *
+ * 6. update single donut subtotal
+ *
+ * 7. update all donuts subtotal
+ *
+ * 8. When donut added to cart --> img src & link title needs to be updated.
+ *
+ * 9. Checkout button links to checkout page
+ */
+
+/***
+ * Extra
+ * Update cart image with counter span when updating cart
  */
