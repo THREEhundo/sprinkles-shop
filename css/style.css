@@ -727,6 +727,50 @@ form>button {
     background: #578ECF;
 }
 
+.shopping-cart-item-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.shopping-cart-item-row>.img-wrapper {
+    width: 17.6vw;
+    margin-right: 4vw;
+    flex-basis: 20%;
+}
+
+.item-link-wrapper {
+    flex-basis: 50%;
+}
+
+.remove-item {
+    flex-basis: 10%;
+    margin-left: 2.2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    bottom: 10px;
+}
+
+.all-items button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: inline-flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-editor {
+    display: flex;
+    flex-direction: row;
+}
+
+.quantity-editor input {
+    flex-basis: 10%;
+}
+
 .empty-cart,
 .full-cart {
     padding: 2rem 5rem;
@@ -735,6 +779,11 @@ form>button {
 .empty-cart>h2,
 .full-cart>h2 {
     font-size: 3.5rem;
+}
+
+.full-cart,
+.full-cart a {
+    color: black;
 }
 
 .cart main {
