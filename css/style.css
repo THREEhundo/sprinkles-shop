@@ -726,3 +726,27 @@ form>button {
 .cart footer {
     background: #578ECF;
 }
+
+.empty-cart,
+.full-cart {
+    padding: 2rem 5rem;
+}
+
+.empty-cart>h2 {
+    font-size: 3.5rem;
+}
+
+.cart main {
+    background-color: #EBEDEC;
+    color: black;
+}
+
+.blue-btn {
+    background-color: #578ECF;
+    color: #EBEDEC;
+}
+
+.blue-btn:hover {
+    opacity: 0.7;
+    background-color: #578ECF;
+}
