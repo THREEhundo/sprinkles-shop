@@ -1,20 +1,31 @@
-<h1 align="center"><a href="https://donut-sprinkles.netlify.app/index.html">Sprinkles</a></h1>
-<h3 align="center">Webapp for a local donut shop.</h3>
+# Sprinkes Donut Shop
+E-commerce web application for a local donut shop. Allows customers to login and purchase donuts!
 
-- 🔭 How It's Made: **The theme when creating the mockup was thick containers and bright colors, kind of like a donut. Animate.css library was used for the animation. The animation gives the web app a little flair to go along with the bright colors.**
+**Link to project:** https://donut-sprinkles.netlify.app/
 
-- 🌱 Optimizations: **Replaced my attempts at janky animations with the Animate.css library. The simple and clean animations were easy to plug into the web app. Worked like a charm with minimal friction. I need to comb over the code to see if I can make the code a bit more DRY. I feel like there should be a way to condense all the product pages into a single page.**
+![shop gif](https://imgur.com/a/yXrN1Mt)
 
-- ⚡ Lessons Learned: **Libraries can be an amazing tool to leverage to get the results you want, fast. I've slowly started to let go of the idea that I need to create everything myself from the ground up. It is not feasible when working on a deadline. We all need help and learning how to seek it out has been a boon for me.**
+## How It's Made:
 
-- 👨‍💻 Next Repository -> [https://github.com/THREEhundo/portfolio-1.0](https://github.com/THREEhundo/portfolio-1.0)
+**Tech used:** HTML, CSS, JavaScript, Animate.css
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/kenyadigitt" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="kenyadigitt" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/samuel-baik" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="samuel-baik" height="30" width="40" /></a>
-</p>
+I created the front end for an e-commerce donut shop. Users have the ability to login and order donuts. The app consists of 4 sections, the landing page, about, catalogue, and cart. 
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> </p>
+## Optimizations
+
+Need to hide mobile menu when clicking on the login li. Have the cart icon update when quanity is changed by the user. Come on back button on the index needs breathing room on mobile view.
+
+## Lessons Learned:
+
+With this project I learned why frameworks like React are used. Creating a page for each individual product is cumbersome being that not much changes besides the specifics of a single product. Having a template and sending the relevant information is a much easier way of creating web apps.
+
+## Examples:
+Take a look at these couple examples that I have in my own portfolio:
+
+**America the Beautiful:** https://github.com/THREEhundo/america-the-beautiful
+
+**Level Ground MMA:** https://github.com/THREEhundo/level-ground
+
+**Sneakers Shopping Cart:** https://github.com/THREEhundo/sneakers-shopping-cart
+
 
