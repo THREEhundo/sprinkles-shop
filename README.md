@@ -3,7 +3,7 @@ E-commerce web application for a local donut shop. Allows customers to login and
 
 **Link to project:** https://donut-sprinkles.netlify.app/
 
-![shop gif](https://imgur.com/a/yXrN1Mt)
+![shop gif](./assets/donuts.gif)
 
 ## How It's Made:
 
